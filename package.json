@@ -1,6 +1,10 @@
 {
   "name": "recoil-logger",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/stackola/recoil-logger.git"
+  },
   "description": "A simple utility to log changes to recoil atoms",
   "main": "index.js",
   "scripts": {
