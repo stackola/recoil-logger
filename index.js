@@ -30,7 +30,10 @@ function usePrevious(value) {
   return ref.current;
 }
 
-export function RecoilLogger({ atoms = [], children = null }) {
+export function RecoilLogger({ atoms = [], children = null, enabled = false }) {
+  if (!enabled) {
+    return null;
+  }
   useRecoilLogger(...atoms);
   return children;
 }
